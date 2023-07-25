@@ -13,6 +13,7 @@
 		84DF622B2A6F2C09009E9804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF62292A6F2C09009E9804 /* Main.storyboard */; };
 		84DF622D2A6F2C0A009E9804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DF622C2A6F2C0A009E9804 /* Assets.xcassets */; };
 		84DF62302A6F2C0A009E9804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF622E2A6F2C0A009E9804 /* LaunchScreen.storyboard */; };
+		84DF62392A7047CC009E9804 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84DF62382A7047CC009E9804 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		84DF622C2A6F2C0A009E9804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DF622F2A6F2C0A009E9804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DF62312A6F2C0A009E9804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DF62382A7047CC009E9804 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = ../../../../../../Downloads/alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				84DF622C2A6F2C0A009E9804 /* Assets.xcassets */,
 				84DF622E2A6F2C0A009E9804 /* LaunchScreen.storyboard */,
 				84DF62312A6F2C0A009E9804 /* Info.plist */,
+				84DF62372A7047AC009E9804 /* Sound */,
 			);
 			path = "Egg Timer";
+			sourceTree = "<group>";
+		};
+		84DF62372A7047AC009E9804 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				84DF62382A7047CC009E9804 /* alarm_sound.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				84DF62302A6F2C0A009E9804 /* LaunchScreen.storyboard in Resources */,
 				84DF622D2A6F2C0A009E9804 /* Assets.xcassets in Resources */,
+				84DF62392A7047CC009E9804 /* alarm_sound.mp3 in Resources */,
 				84DF622B2A6F2C09009E9804 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,14 +23,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enJ-Lx-jjj" userLabel="Title View">
                                         <rect key="frame" x="0.0" y="0.0" width="357" height="249"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do you like your eggs?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="59I-tO-YEV">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your eggs?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="59I-tO-YEV">
                                                 <rect key="frame" x="0.0" y="8" width="361" height="229"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="59I-tO-YEV" secondAttribute="trailing" constant="-4" id="RMe-4w-RR5"/>
+                                            <constraint firstItem="59I-tO-YEV" firstAttribute="leading" secondItem="enJ-Lx-jjj" secondAttribute="leading" id="iMp-iy-cR0"/>
+                                            <constraint firstItem="59I-tO-YEV" firstAttribute="top" secondItem="enJ-Lx-jjj" secondAttribute="topMargin" id="jjT-YN-Icw"/>
+                                            <constraint firstAttribute="bottom" secondItem="59I-tO-YEV" secondAttribute="bottom" constant="12" id="tNc-Ou-LjC"/>
+                                        </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="GDa-g6-aeA">
                                         <rect key="frame" x="0.0" y="318" width="357" height="128"/>
@@ -132,9 +137,17 @@
                                                 <color key="progressTintColor" systemColor="systemYellowColor"/>
                                                 <color key="trackTintColor" systemColor="systemGray2Color"/>
                                             </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo6-u3-EGg">
+                                                <rect key="frame" x="178.66666666666666" y="98.333333333333371" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Vnr-gh-DPh" firstAttribute="centerY" secondItem="Qdz-q4-pM4" secondAttribute="centerY" id="0Cj-KH-K4a"/>
+                                            <constraint firstItem="Vnr-gh-DPh" firstAttribute="top" secondItem="xo6-u3-EGg" secondAttribute="bottom" constant="20" id="Dn8-FK-emF"/>
+                                            <constraint firstItem="xo6-u3-EGg" firstAttribute="centerX" secondItem="Qdz-q4-pM4" secondAttribute="centerX" id="GFt-Ye-bHH"/>
                                             <constraint firstItem="Vnr-gh-DPh" firstAttribute="leading" secondItem="Qdz-q4-pM4" secondAttribute="leading" id="fbl-O3-u8W"/>
                                             <constraint firstAttribute="trailing" secondItem="Vnr-gh-DPh" secondAttribute="trailing" id="mm8-nY-cXv"/>
                                             <constraint firstItem="Vnr-gh-DPh" firstAttribute="centerX" secondItem="Qdz-q4-pM4" secondAttribute="centerX" id="veb-gl-Y8c"/>
@@ -155,6 +168,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressSecLabel" destination="xo6-u3-EGg" id="WBh-tI-VX9"/>
                         <outlet property="progressView" destination="Vnr-gh-DPh" id="9go-en-u6C"/>
                         <outlet property="titleLabel" destination="59I-tO-YEV" id="n2I-Mc-e6r"/>
                     </connections>
